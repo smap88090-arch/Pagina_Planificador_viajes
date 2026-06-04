@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+
+    <title>Planificador de Viajes</title>
+
+    <link rel="icon" href="Img/viajes-por-todo-el-mundo.png">
+
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Planificador de Viajes</h1>
+    </header>
+
+    <h2>Calculadora de presupuesto</h2>
+
+    <div class="contenedor">
+        <form id="formViaje"> 
+            
+            <div class="fila-label"> 
+                <img src="Img/mapas-y-banderas.png" class="mapa">
+                <label>Destino:</label>
+            </div>
+            <input type="text" id="destino" required>
+
+            <div class="fila-label"> 
+                <img src="Img/calendario.png" class="calendario">
+                <label>Días:</label>
+            </div>
+            <input type="number" id="dias" required>
+
+            <div class="fila-label"> 
+                <img src="Img/euro.png" class="euro">
+                <label> Presupuesto(€):</label>
+             </div>
+            <input type="number" id="presupuesto" required>
+
+        <button type="button" onclick="agregarViaje()">Calcular</button>
+        <button type="button" onclick="exportarCSV()">Exportar CSV</button>
+        <div id="advertencia"> </div>
+        </form>
+    
+
+     <table>
+         <thead>
+              <tr>
+                    <th>Destino</th>
+                    <th>Días</th>
+                    <th>Presupuesto (€)</th>
+                    <th>Gasto Diario (€)</th>
+             </tr>
+         </thead>
+             <tbody id="tablaResultados">
+
+             </tbody>
+     </table>
+    </div>
+   <script src="Operaciones.js"></script>
+</body>
+
+</html>
