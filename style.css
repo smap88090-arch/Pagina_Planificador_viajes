@@ -1,0 +1,194 @@
+/* -- ESTILOS GENERALES-- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url(Img/pexels-dajana-reci-289671698-13580378.jpg);
+
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* --CABECERA--*/
+header{
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    padding: 25px;
+    text-align: center; 
+}
+
+header h1{
+     font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+/* --CONTENEDOR PRINCIPAL-- */
+h2{
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    color: #fdfdfd;
+    font-size: 36px;
+    font-weight: 600;
+    }
+
+.contenedor{
+    max-width: 700px;
+    margin: auto;
+    padding: 50px;
+}
+
+/* --TARJETA DEL FORMULARIO-- */
+form{
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+form label{
+
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+}
+
+form input{
+    width: 250px;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+form input:focus{
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 8px rgba(37,99,235,0.3);
+}
+
+form input:hover{
+    border-color: #2563eb;
+}
+
+/* --IMAGENES DEL FORMULARIO-- */
+.mapa,.calendario,.euro{
+    width: 20px;
+    height: 20px;
+}
+.fila-label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* --BOTONES-- */
+
+button{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 14px;
+    border-radius: 12px;
+    transition: 0.3s;
+
+}
+
+button:first-of-type{
+    background: #2563eb;
+    color: white;
+}
+
+button:first-of-type:hover{
+    background: #1d4ed8;
+}
+
+button:last-of-type{
+    background: #10b981;
+    color: white;
+}
+
+button:last-of-type:hover{
+    background: #059669;
+}
+
+
+/* --MENSAJES-- */
+#advertencia{
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.alerta{
+    color: #dc2626;
+    font-weight: bold;
+    font-size: 1.1rem;
+    justify-content: center;
+
+}
+.suficiente{
+    color: #13ae0e;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+/* --TABLA-- */
+
+table{
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    background: rgba(255,255,255,0.95);
+}
+
+thead{
+    background: #1e293b;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+th{
+    padding: 15px;
+}
+
+td{
+    padding: 14px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even){
+    background: #f8fafc;
+}
+
+tbody tr:hover{
+    background: #e0f2fe;
+    transition: 0.2s;
+}

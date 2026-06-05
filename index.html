@@ -1,0 +1,92 @@
+
+<!--PROYECTO: Planificador de Viajes
+
+Herramienta utilizada:
+ChatGPT (OpenAI) como apoyo para el desarrollo del código JavaScript, CSS y HTML.
+
+Uso:
+- Ayuda en la lógica del programa
+- Depuración de errores
+- Mejora de estructura y diseño
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+
+    <title>Planificador de Viajes</title>
+
+    <link rel="icon" href="Img/viajes-por-todo-el-mundo.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <!-- CABECERA PRINCIPAL -->
+    <header>
+        <h1>Planificador de Viajes</h1>
+    </header>
+<!-- TÍTULO SECUNDARIO -->
+    <h2>Calculadora de presupuesto</h2>
+
+    <div class="contenedor">
+ <!-- FORMULARIO DE ENTRADA DE DATOS -->
+        <form id="formViaje"> 
+
+            <!-- CAMPO: DESTINO -->
+            <div class="fila-label"> 
+                <img src="Img/mapas-y-banderas.png" class="mapa">
+                <label>Destino:</label>
+            </div>
+            <input type="text" id="destino" required>
+
+            <!-- CAMPO: DIAS -->
+            <div class="fila-label"> 
+                <img src="Img/calendario.png" class="calendario">
+                <label>Días:</label>
+            </div>
+            <input type="number" id="dias" required>
+
+            <!-- CAMPO: PRESUPUESTO -->
+            <div class="fila-label"> 
+                <img src="Img/euro.png" class="euro">
+                <label> Presupuesto(€):</label>
+             </div>
+            <input type="number" id="presupuesto" required>
+
+        <!-- BOTONES DE ACCIÓN -->
+        <button type="button" onclick="agregarViaje()">Calcular</button>
+        <button type="button" onclick="exportarCSV()">Exportar CSV</button>
+        
+        <!-- ZONA DE MENSAJES -->
+        <div id="advertencia"> </div>
+        </form>
+    
+    <!-- TABLA DE RESULTADOS -->
+     <table>
+        <!-- CABECERA DE LA TABLA -->
+         <thead>
+              <tr>
+                    <th>Destino</th>
+                    <th>Días</th>
+                    <th>Presupuesto (€)</th>
+                    <th>Gasto Diario (€)</th>
+             </tr>
+         </thead>
+            
+         <!-- CUERPO DINÁMICO DE LA TABLA -->
+             <tbody id="tablaResultados">
+
+             </tbody>
+     </table>
+    </div>
+
+    <!-- ENLACE AL JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+
+</html>
